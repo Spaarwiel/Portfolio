@@ -12,14 +12,22 @@ header {
 }
 
 nav {
-    display: flex;
-    align-items: center;
+    height: 20px;
 }
 
 #logo {
     font-size: 1.2em;
     font-weight: 900;
+    padding: 10px 0px 10px 20px;
     color: #fff;
+    float: left;
+}
+
+.hamIcon {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 0px;
+    float: right;
 }
 
 #navigation {
