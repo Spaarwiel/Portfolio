@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background:linear-gradient(45deg,rgba(19, 41, 97, 0.979),rgba(35, 59, 121, 0.486)),url(./images/jovan.jpg);
+    background:linear-gradient(45deg,#044099cc, #2d7bc4f5),url(./images/hero.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -16,7 +16,7 @@ nav {
 }
 
 #logo {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 900;
     padding: 10px 0px 10px 20px;
     color: #fff;
@@ -32,6 +32,7 @@ nav {
 
 #navigation {
     font-size: 0.7em;
+   
 }
 
 #navigation ul li {
@@ -41,5 +42,11 @@ nav {
 
 ul a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
+
+.hamIcon:hover {
+    color: black;
+}
+
+@media 
