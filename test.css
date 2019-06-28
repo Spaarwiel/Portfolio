@@ -1,0 +1,47 @@
+html, body{
+    display: block;
+    background: #000;
+    color: #fff; }
+
+    nav{
+        display: block;
+        position: fixed;
+        box-sizing: border-box;
+        top: 0;
+        left: -100vw;
+        z-index: 9999;
+        padding: .50em 10em .50em 10em;;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background: red;
+        transition: all 1s; }
+
+        nav.open{
+            left: 0;
+          }
+          nav *:nth-child(2){
+            position: fixed;
+            padding: 1em;
+            cursor: pointer;
+            left: 50vh;
+            top: 0vh;
+            clear: both; }
+
+            nav a{
+                display: block;
+                font-size: 4em;
+                color: #000;
+                font-family: arial;
+                text-decoration: none;
+                margin-top: .2em;
+              }
+
+              @media only screen and (min-width: 600px) {
+                #hamburger {
+                 visibility: hidden;
+                }
+                #list {
+                    visibility: visible;
+                }
+              }

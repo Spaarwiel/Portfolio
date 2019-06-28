@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background:linear-gradient(45deg,#044099cc, #2d7bc4f5),url(./images/hero.jpg);
+    background:linear-gradient(45deg,#0a142291, #48576488),url(./images/header-bg.jpeg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -12,7 +12,50 @@ header {
 }
 
 nav {
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    box-sizing: border-box;
+    top: 50px;
+    right: -100vw;
+    z-index: 9999;
+    width: 75vw;
+    height: 200px;
+    text-align: center;
+    background:#ffffff;
+    transition: all 1s;
+}
+
+nav.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+  }
+
+nav *:first-child {
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+ 
+}
+
+nav a {
+    font-size: 1.2em;
+    color:#222222;
+    font-family: arial;
+    text-decoration: none;
+    padding: 7px;
+
+}
+
+nav a:hover {
+    color:#3161ff;
 }
 
 #logo {
@@ -48,5 +91,3 @@ ul a {
 .hamIcon:hover {
     color: black;
 }
-
-@media 
