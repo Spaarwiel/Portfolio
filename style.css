@@ -1,21 +1,35 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
-    background:linear-gradient(45deg,#0a142291, #48576488),url(./images/header-bg.jpeg);
+    background:linear-gradient(45deg, #459bca81, #023f9b77),url(./images/header-bg.jpeg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
+}
+
+a #logo {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 0px 10px 20px;
+    
 }
 
 nav {
+    /* this is to fix the slide menu hyperlinks from displaying inline when closing */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* end */
     position: fixed;
     box-sizing: border-box;
     top: 50px;
@@ -39,10 +53,15 @@ nav.open {
 nav *:first-child {
     position: fixed;
     cursor: pointer;
-    top: 20px;
+    top: 12px;
     right: 20px;
     color: #ffffff;
+    font-size: 1.4em;
  
+}
+
+nav *:first-child:hover {
+    color: black;
 }
 
 nav a {
@@ -58,22 +77,27 @@ nav a:hover {
     color:#3161ff;
 }
 
-#logo {
-    font-size: 1.5em;
-    font-weight: 900;
-    padding: 10px 0px 10px 20px;
-    color: #fff;
-    float: left;
+.overText {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hamIcon {
-    color: #fff;
-    font-size: 1.2em;
-    padding: 10px 20px 10px 0px;
-    float: right;
+.overTextH1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
 }
 
-#navigation {
+.overTextSmall {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* #navigation {
     font-size: 0.7em;
    
 }
@@ -86,8 +110,5 @@ nav a:hover {
 ul a {
     text-decoration: none;
     color: black;
-}
+} */
 
-.hamIcon:hover {
-    color: black;
-}
