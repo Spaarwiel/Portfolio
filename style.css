@@ -1,28 +1,30 @@
+/* --------------------BODY-------------------- */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
 }
 
+/* --------------------HEADER-------------------- */
 header {
-    background:linear-gradient(45deg, #459bca81, #023f9b77),url(./images/header-bg.jpeg);
+    background:linear-gradient(45deg, #031f4be5, #87abe977),url(./images/header-bg.jpeg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
     height: 80vh;
 }
 
+/* Just text for now */
 a #logo {
     font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
     padding: 10px 0px 10px 20px;
-    
 }
 
+/* --------------------HEADER/NAV-------------------- */
 nav {
     /* this is to fix the slide menu hyperlinks from displaying inline when closing */
     display: flex;
@@ -41,7 +43,7 @@ nav {
     background:#ffffff;
     transition: all 1s;
 }
-
+/* Class created with js for slideout of menu */
 nav.open {
     display: flex;
     justify-content: center;
@@ -49,7 +51,7 @@ nav.open {
     flex-direction: column;
     right: 0;
   }
-
+/* CSS for the hamburger menu hmmm */
 nav *:first-child {
     position: fixed;
     cursor: pointer;
@@ -59,7 +61,7 @@ nav *:first-child {
     font-size: 1.4em;
  
 }
-
+/* Need to fix issue that when I close menu icon stays black */
 nav *:first-child:hover {
     color: black;
 }
@@ -67,7 +69,6 @@ nav *:first-child:hover {
 nav a {
     font-size: 1.2em;
     color:#222222;
-    font-family: arial;
     text-decoration: none;
     padding: 7px;
 
@@ -77,6 +78,7 @@ nav a:hover {
     color:#3161ff;
 }
 
+/* --------------------HEADER/TEXT-------------------- */
 .overText {
     height: 70vh;
     display: flex;
@@ -97,18 +99,54 @@ nav a:hover {
     text-align: center;
 }
 
-/* #navigation {
-    font-size: 0.7em;
-   
+/* --------------------ABOUT ME SECTION-------------------- */
+.sectionHeadingsH1 {
+    font-size: 1.6em;
+    text-align: center;
+    color: #222222;
+    font-weight: 100;
+    margin: 20px;
 }
 
-#navigation ul li {
-    list-style: none;
-    display: inline;
+.sectionHeadingsH2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #1461ff;
+    font-weight: 100;
 }
 
-ul a {
-    text-decoration: none;
-    color: black;
+.divider {
+    width: 125px;
+    height: 5px;
+    background-color: #222222;
+    margin: -10px auto 20px auto;
+}
+
+section {
+   text-align: center;
+}
+
+#about img {
+    width: 200px;
+    border: 1px solid #1461ff;
+    border-radius: 2px;
+}
+
+.sectionText {
+    color: #777b99;
+    line-height: 1.4em;
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+}
+
+/* --------------------ABOUT ME SECTION-------------------- */
+#portfolio img {
+    width: 200px;
+    border: 1px solid #1461ff;
+    border-radius: 2px;
+}
+
+/* #portfolio img:hover {
+  
 } */
 

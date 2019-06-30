@@ -20,8 +20,10 @@
     <!-- HEADER -->
     <header>
         <a>
+            <!-- Left logo/text -->
             <div id="logo">J Le Roux</div>
         </a>
+        <!-- Slideout menu for mobile -->
         <nav data-action="expand">
             <i class="fas fa-bars"></i>
             <a href="#home">Home</a>
@@ -31,38 +33,42 @@
             <a href="#contact">Contact</a>
         </nav>
 
-        <!-- <div id="navigation">
-                <ul>
-                    <a href="#home">
-                        <li>Home</li>
-                    </a>
-                    <a href="#about">
-                        <li>About</li>
-                    </a>
-                    <a href="#portfolio">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="#skills">
-                        <li>Skills</li>
-                    </a>
-                    <a href="#contact">
-                        <li>Contact</li>
-                    </a>
-
-                </ul> -->
+        <!-- Text over hero image -->
         <div class="overText">
             <h1 class="overTextH1">Hi I'm Jovan.</h1>
             <p class="overTextSmall"> I'm a South African freelancing Web Developer with a love for everything IT.</p>
         </div>
     </header>
-    </div>
+
     <main>
+        <!-- About me section -->
         <section id="about" class="about">
-            <h1>About</h1>
-            <p>Hi I'm Jovan. I'm a South African freelancing Web Developer with a love for everything IT. </p>
+            <h1 class="sectionHeadingsH1">About Me</h1>
+            <div class="divider"></div>
+            <img src="./images/jovan.jpg" alt="My Profile Picture">
+            <h2 class="sectionHeadingsH2">A little about Myself, try not to yawn.</h2>
+            <p class="sectionText">Hi I'm Jovan. I'm a South African freelancing Web Developer with a love for everything IT.
+            <p class="sectionText"> My skills include HTML5, CSS3, JavaScript and PHP.</p>
+             <p class="sectionText">I continue to learn more skills everyday and improve exsisting ones.</p>
+             <p class="sectionText">I specialize in creating web applications for clients ranging from individuals and small-businesses all the way to large enterprise corporations.</p>
         </section>
+
+        <!-- Portfolio section -->
+       <section id="portfolio" class="portfolio">
+            <h1 class="sectionHeadingsH1">My Work</h1>
+            <div class="divider"></div>
+            <h2 class="sectionHeadingsH2">Take a look at some of the work I've done.</h2>
+            <div class="portfolioContainer">
+                <img id="portfolioImage" onmouseover="changeColor()" src="./images/basil-blur-cheese-1279330.jpg" alt="portfolioImageOne">
+                <!-- <h3 class="sectionHeadingsH3">Name of Project</h3> -->
+            </div>
+       </section>
+
     </main>
+
+    <!-- Footer -->
     <footer></footer>
+
     <!-- Javascript file -->
     <script src="script.js"></script>
 </body>
